@@ -5,6 +5,7 @@
  */
 package Forms;
 
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -127,6 +128,11 @@ public class Matriz extends javax.swing.JFrame {
         int [][]matriz = new int [10][10];
         matriz = this.matrizEspiral(n);
         this.mostrarMatriz(matriz, n, m);
+        int kk = 0;
+        if (matriz [n][0]==5){
+            kk = kk+1;
+        }
+        JOptionPane.showMessageDialog(rootPane, "La cantidad que empieza con 5 es de:"+ kk);
     }//GEN-LAST:event_btnAceptarActionPerformed
 
     /**
